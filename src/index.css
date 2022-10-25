@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main {
+    @apply flex flex-col items-center bg-white dark:bg-gray-800 h-screen dark:text-white;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-700 dark:text-white shadow-lg rounded-lg p-6 mt-4 w-2/4;
+  }
+
+  .card h1 {
+    @apply text-2xl font-bold mb-4;
+  }
+
+  .card p {
+    @apply text-gray-600 dark:text-gray-400;
+  }
+
+  .switcher {
+    @apply dark:bg-gray-300 bg-gray-600 rounded-full w-14 h-8 flex items-center py-2 px-0 absolute top-2 right-2;
+  }
+
+  .icon {
+    @apply dark:translate-x-1 translate-x-7 w-6 absolute dark:bg-gray-600 bg-gray-300 p-1 rounded-full duration-1000 transition-all;
+  }
+}
