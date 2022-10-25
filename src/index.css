@@ -4,7 +4,7 @@
 
 @layer components {
   .main {
-    @apply flex flex-col items-center bg-white dark:bg-gray-800 h-screen dark:text-white;
+    @apply flex flex-col items-center bg-white dark:bg-gray-800 h-max dark:text-white pt-10 md:pt-2;
   }
 
   .card {
@@ -16,9 +16,12 @@
   }
 
   .card p {
-    @apply text-gray-600 dark:text-gray-400;
+    @apply text-gray-600 dark:text-gray-400 ml-2;
   }
 
+  .card h2 {
+    @apply text-xl font-bold mb-2 mt-2;
+  }
   .switcher {
     @apply dark:bg-gray-300 bg-gray-600 rounded-full w-14 h-8 flex items-center py-2 px-0 absolute top-2 right-2;
   }
